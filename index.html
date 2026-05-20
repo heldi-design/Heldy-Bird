@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Bird Market</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div id="logo">BGJ</div>
+        <div id="search-bar">
+            <input type="text" placeholder="Cari burung..." id="search-input" />
+        </div>
+        <div id="location">JAWA BARAT</div>
+    </header>
+
+    <main>
+        <div class="filter-container">
+            <button id="price-filter">Harga ▼</button>
+        </div>
+
+        <div id="listings">
+            <div class="listing" data-price="180000" data-name="Burung Pleci">
+                <img src="pleci.jpg" alt="Burung Pleci" />
+                <div class="info">
+                    <div class="title">Burung Pleci</div>
+                    <div class="price">Rp 180.000</div>
+                    <button class="buy-btn" onclick="goToPayment('Burung Pleci', '180.000')">Beli</button>
+                </div>
+            </div>
+            <div class="listing" data-price="75000" data-name="Burung Sogon">
+                <img src="sogon.jpeg" alt="Burung Sogon" />
+                <div class="info">
+                    <div class="title">Burung Sogon</div>
+                    <div class="price">Rp 75.000</div>
+                    <button class="buy-btn" onclick="goToPayment('Burung Sogon', '75.000')">Beli</button>
+                </div>
+            </div>
+            <div class="listing" data-price="80000" data-name="Burung Kutilang">
+                <img src="kutilang.jpg" alt="Burung Kutilang" />
+                <div class="info">
+                    <div class="title">Burung Kutilang</div>
+                    <div class="price">Rp 80.000</div>
+                    <button class="buy-btn" onclick="goToPayment('Burung Kutilang', '80.000')">Beli</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Pixel Bird Market. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

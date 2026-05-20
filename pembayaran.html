@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Pixel Bird Market</title>
+    <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+    <div class="box">
+        <div id="payment-content">
+            <h2>Konfirmasi Pembayaran</h2>
+            <p id="detail">Memuat detail pesanan...</p>
+            <hr>
+            
+            <div class="payment-methods">
+                <p style="font-weight: bold; margin-bottom: 10px; color: #555;">Pilih Metode Pembayaran:</p>
+                
+                <label>
+                    <input type="radio" name="method" value="QRIS" checked> 
+                    <span>QRIS (Gopay, OVO, Dana)</span>
+                </label>
+                <label>
+                    <input type="radio" name="method" value="Dana"> 
+                    <span>Dana</span>
+                </label>
+                <label>
+                    <input type="radio" name="method" value="Gopay"> 
+                    <span>Gopay</span>
+                </label>
+                <label>
+                    <input type="radio" name="method" value="COD"> 
+                    <span>Bayar di Tempat (COD)</span>
+                </label>
+            </div>
+
+            <button class="btn-confirm" id="btn-pay">Bayar Sekarang</button>
+            
+            <div class="footer-links">
+                <a href="index.html" class="btn-cancel">Batal & Kembali</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="pembayaran.js"></script>
+</body>
+</html>
